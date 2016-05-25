@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{subfiles}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[mathscr]{euscript}
+\usepackage{enumerate}
+\usepackage{bm}
+\usepackage{forloop}
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{fact}[thm]{Fact}
+
+\theoremstyle{definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{examples}[thm]{Examples}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{rem}[thm]{Remark}
+
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\F}{{\mathbb F}}
+\newcommand{\power}{{\mathfrak P}}
+\newcommand{\vv}{\boldsymbol}
+\newcommand{\sT}{{\mathscr T}}
+\newcommand{\cC}{{\mathcal C}}
+\newcommand{\cP}{{\mathcal P}}
+\newcommand{\cH}{{\mathcal H}}
+
+\setlength\topmargin{0in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+\setlength\headsep{2mm}
+\setlength\textheight{9in}
+\setlength\textwidth{6.5in}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+
+
+\lhead{Brice Huang}
+\chead{Napkin Solutions}
+
+\begin{document}
+
+\newcounter{chapter}
+
+\section*{BLAH}
+\subfile{sections/Chapter-0}
+\newpage
+
+\forloop{chapter}{1}{\value{chapter} < 51}{
+    \section{Chapter \arabic{chapter}}
+		\subfile{sections/Chapter-\arabic{chapter}}
+		\newpage
+}
+
+
+\end{document}
