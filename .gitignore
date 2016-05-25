@@ -1,0 +1,9 @@
+# Compiled source #
+###################
+*.aux
+*.bbl
+*.blg
+*.log
+*.pdf
+*.tps
+*.tcp

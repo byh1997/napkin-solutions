@@ -1,0 +1,3 @@
+Compilation of solutions to An Infinitely Large Napkin by Evan Chen. 
+
+Darn, math is hard.  Finishing this is contingent on us actually understanding the material...
